@@ -109,7 +109,7 @@ main .image{
 }
 main .image img.laptop{
   display: block;
-  max-width: 50%;
+  max-width: 60%;
   margin: auto;
   filter: drop-shadow(0px 5px 3px black);
 }
@@ -134,19 +134,16 @@ main .image .bottom img{
   top: 0%;
   right: 0%;
   opacity: 0.6;
-  height: 80%;
+  height: 50%;
 }
 .background img.medium{
-  top: 30%;
+  height: 50%;
+  top: 15%;
   right: 30%;
-  height: 60%;
-  opacity: 0.5;
 }
 .background img.small{
-  top: 45%;
-  right: 50%;
-  height: 55%;
-  opacity: 0.8;
+  top: 35%;
+  right: 60%;
 }
 
 
@@ -295,11 +292,30 @@ main .image .bottom img{
   }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
   main .image img.laptop{
     display: block;
     max-width: 80%;
     margin: auto;
     filter: drop-shadow(0px 5px 3px black);
+  }
+  .background img{
+    position: absolute;
+    z-index: -1;
+  }
+  .background img.big{
+    top: 0%;
+    right: 0%;
+    opacity: 0.6;
+    height: 30%;
+  }
+  .background img.medium{
+    height: 30%;
+    top: 25%;
+    right: 27%;
+  }
+  .background img.small{
+    top: 35%;
+    right: 45%;
   }
 }
