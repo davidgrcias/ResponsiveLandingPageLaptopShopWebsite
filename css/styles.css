@@ -162,7 +162,8 @@ main .image .bottom img{
   nav .logo{
     display: flex;
     flex: 1;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: -1px;
   }
 
   /* nav end */
